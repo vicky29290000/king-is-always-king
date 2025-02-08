@@ -1,0 +1,31 @@
+{
+  "name": "king-is-always-king",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicky29290000/king-is-always-king.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicky29290000/king-is-always-king/issues"
+  },
+  "homepage": "https://github.com/vicky29290000/king-is-always-king#readme",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.3.1",
+    "aws-sdk": "^2.1692.0",
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "next-auth": "^4.24.11",
+    "prisma": "^6.3.1"
+  }
+}
