@@ -1,4 +1,4 @@
-import FileUpload from "./FileUpload"
+import FileUpload from "./FileUpload";
 
 export default function EmployeeDashboard() {
   return (
@@ -7,6 +7,5 @@ export default function EmployeeDashboard() {
       <FileUpload />
       {/* Add employee-specific features here */}
     </div>
-  )
+  );
 }
-

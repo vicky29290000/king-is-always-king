@@ -20,11 +20,11 @@ export default function Dashboard() {
   }, [status, router])
 
   if (status === "loading") {
-    return <div>Loading...</div> // You can replace with a spinner or animation
+    return <div>Loading...</div> // You can replace this with a spinner or animation for a better UX
   }
 
   if (!session?.user) {
-    return null // This might never be reached due to the redirect above
+    return <div>Please log in to access your dashboard.</div> // Display a message if no session is available
   }
 
   const renderDashboard = () => {
@@ -40,7 +40,7 @@ export default function Dashboard() {
       case "superAdmin":
         return <SuperAdminDashboard />
       default:
-        return <div>Unknown role</div> // Handle unknown roles more gracefully
+        return <div>Unknown role</div> // You can enhance this to show a 404 page or a more detailed error message
     }
   }
 

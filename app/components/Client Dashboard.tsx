@@ -1,5 +1,5 @@
-import FileUpload from "./FileUpload"
-import DesignConceptSelector from "./DesignConceptSelector"
+import FileUpload from "./FileUpload";
+import DesignConceptSelector from "./DesignConceptSelector";
 
 export default function ClientDashboard() {
   return (
@@ -9,6 +9,5 @@ export default function ClientDashboard() {
       <FileUpload />
       {/* Add more client-specific features here */}
     </div>
-  )
+  );
 }
-

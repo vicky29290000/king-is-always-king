@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
-const designConcepts = ["Good Plus", "Better Plus", "Quad Plus", "Luxury Plus"]
+const designConcepts = ["Good Plus", "Better Plus", "Quad Plus", "Luxury Plus"];
 const constructionConcepts = [
   "Good Plus Construction",
   "Better Plus Construction",
   "Quad Plus Construction",
   "Luxury Plus Construction",
-]
+];
 
 export default function DesignConceptSelector() {
-  const [selectedDesign, setSelectedDesign] = useState("")
-  const [selectedConstruction, setSelectedConstruction] = useState("")
+  const [selectedDesign, setSelectedDesign] = useState("");
+  const [selectedConstruction, setSelectedConstruction] = useState("");
 
   return (
     <div className="space-y-4">
@@ -53,6 +53,5 @@ export default function DesignConceptSelector() {
         </select>
       </div>
     </div>
-  )
+  );
 }
-

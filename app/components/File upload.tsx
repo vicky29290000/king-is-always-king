@@ -7,13 +7,23 @@ export default function FileUpload() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
-      setFiles(Array.from(e.target.files))
+      const selectedFiles = Array.from(e.target.files)
+      
+      // Optional: File size/type validation before setting state
+      const validFiles = selectedFiles.filter((file) =>
+        file.type === "application/pdf" || file.type.startsWith("image/")
+      )
+
+      setFiles(validFiles)
     }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (files.length === 0) return
+    if (files.length === 0) {
+      alert("Please select files to upload.")
+      return
+    }
 
     const formData = new FormData()
     files.forEach((file) => {
@@ -25,15 +35,16 @@ export default function FileUpload() {
         method: "POST",
         body: formData,
       })
+
       if (response.ok) {
-        alert("Files uploaded successfully")
-        setFiles([])
+        alert("Files uploaded successfully!")
+        setFiles([]) // Clear the file list after successful upload
       } else {
-        alert("File upload failed")
+        alert("File upload failed.")
       }
     } catch (error) {
       console.error("Error uploading files:", error)
-      alert("File upload failed")
+      alert("Error occurred while uploading the files.")
     }
   }
 
@@ -47,15 +58,17 @@ export default function FileUpload() {
           type="file"
           id="files"
           multiple
-          accept=".pdf,.jpg,.jpeg"
+          accept=".pdf,.jpg,.jpeg" // Restrict to PDF and JPEG file types
           onChange={handleFileChange}
           className="w-full px-3 py-2 border rounded"
         />
       </div>
-      <button type="submit" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+      <button
+        type="submit"
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+      >
         Upload Files
       </button>
     </form>
   )
 }
-
