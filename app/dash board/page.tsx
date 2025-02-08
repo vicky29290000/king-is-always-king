@@ -20,11 +20,11 @@ export default function Dashboard() {
   }, [status, router])
 
   if (status === "loading") {
-    return <div>Loading...</div>
+    return <div>Loading...</div> // You can replace with a spinner or animation
   }
 
   if (!session?.user) {
-    return null
+    return null // This might never be reached due to the redirect above
   }
 
   const renderDashboard = () => {
@@ -40,7 +40,7 @@ export default function Dashboard() {
       case "superAdmin":
         return <SuperAdminDashboard />
       default:
-        return <div>Unknown role</div>
+        return <div>Unknown role</div> // Handle unknown roles more gracefully
     }
   }
 
@@ -53,4 +53,3 @@ export default function Dashboard() {
     </div>
   )
 }
-
