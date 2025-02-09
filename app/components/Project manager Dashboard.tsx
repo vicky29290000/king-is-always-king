@@ -1,6 +1,6 @@
 import React from 'react';  // Add this line at the top of the file
 
-const Project Manager Dashboard = () => {
+const ProjectManager Dashboard = () => {
   return (
     <div>
       {/* Your JSX here */}
@@ -8,4 +8,4 @@ const Project Manager Dashboard = () => {
   );
 };
 
-export default Project Manager Dashboard;
+export default ProjectManager Dashboard;

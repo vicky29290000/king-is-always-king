@@ -32,13 +32,13 @@ export default function Dashboard() {
       case "client":
         return <Client Dashboard />
       case "project Manager":
-        return <Project manager Dashboard />
+        return <Project managerDashboard />
       case "architect":
         return <Architect dashboard />
       case "employee":
         return <Employee Dashboard />
       case "superAdmin":
-        return <Super admin Dashboard />
+        return <Super adminDashboard />
       default:
         return <div>Unknown role</div> // You can enhance this to show a 404 page or a more detailed error message
     }

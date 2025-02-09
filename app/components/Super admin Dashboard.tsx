@@ -1,5 +1,5 @@
-import Super admin Dashboard from "./Architect dashboard";  // Ensure FileUpload exists in the same directory
-import Super admin Dashboard from "./Project manager Dashboard";  // Ensure DesignConceptSelector exists in the same directory
+import SuperadminDashboard from "./Architect dashboard";  // Ensure FileUpload exists in the same directory
+import SuperadminDashboard from "./Project manager Dashboard";  // Ensure DesignConceptSelector exists in the same directory
 
 export default function Super admin Dashboard() {
   const handleManageUsers = () => {
