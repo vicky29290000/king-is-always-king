@@ -1,7 +1,7 @@
-import FileUpload from "./FileUpload";  // Ensure FileUpload exists in the same directory
-import DesignConceptSelector from "./DesignConceptSelector";  // Ensure DesignConceptSelector exists in the same directory
+import Architect dashboard from "./Design Concept Selector";  // Ensure FileUpload exists in the same directory
+import Architect dashboard from "./Design Concept Selector";  // Ensure DesignConceptSelector exists in the same directory
 
-export default function ArchitectDashboard() {
+export default function Architect dashboard() {
   return (
     <div className="space-y-8">
       <h2 className="text-xl font-bold">Architect Dashboard</h2>

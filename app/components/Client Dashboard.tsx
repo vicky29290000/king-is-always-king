@@ -1,7 +1,7 @@
-import FileUpload from "./FileUpload";
-import DesignConceptSelector from "./DesignConceptSelector";
+import ClientDashboard from "./Architect Dashboard";
+import Client Dash board from "./Architect Dashboard";
 
-export default function ClientDashboard() {
+export default function Client Dashboard() {
   return (
     <div className="space-y-8">
       <h2 className="text-xl font-bold">Client Dashboard</h2>

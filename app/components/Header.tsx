@@ -19,13 +19,13 @@ export default function Header() {
           {session ? (
             <>
               <li>
-                <Link href="/dashboard" className="hover:text-gray-300">
+                <Link href="/Architect dashboard" className="hover:text-gray-300">
                   Dashboard
                 </Link>
               </li>
-              {session.user?.role === "superAdmin" && (
+              {session.user?.role === "super Admin Dashboard" && (
                 <li>
-                  <Link href="/admin" className="hover:text-gray-300">
+                  <Link href="/Super admin Dash Board" className="hover:text-gray-300">
                     Admin
                   </Link>
                 </li>

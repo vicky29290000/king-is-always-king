@@ -1,7 +1,7 @@
-import FileUpload from "./FileUpload";  // Ensure FileUpload exists in the same directory
-import DesignConceptSelector from "./DesignConceptSelector";  // Ensure DesignConceptSelector exists in the same directory
+import Super admin Dashboard from "./Architect dashboard";  // Ensure FileUpload exists in the same directory
+import Super admin Dashboard from "./Project manager Dashboard";  // Ensure DesignConceptSelector exists in the same directory
 
-export default function SuperAdminDashboard() {
+export default function Super admin Dashboard() {
   const handleManageUsers = () => {
     // Add functionality for managing users
     console.log("Managing users...");
@@ -25,7 +25,7 @@ export default function SuperAdminDashboard() {
       <DesignConceptSelector />
 
       {/* Render FileUpload */}
-      <FileUpload />
+      <Architect dashboard />
 
       {/* Super Admin specific controls */}
       <div>

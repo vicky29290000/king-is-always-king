@@ -10,7 +10,7 @@ const constructionConcepts = [
   "Luxury Plus Construction",
 ];
 
-export default function DesignConceptSelector() {
+export default function Design Concept Selector() {
   const [selectedDesign, setSelectedDesign] = useState("");
   const [selectedConstruction, setSelectedConstruction] = useState("");
 

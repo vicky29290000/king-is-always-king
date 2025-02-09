@@ -1,13 +1,11 @@
-import FileUpload from "./FileUpload";
-import DesignConceptSelector from "./DesignConceptSelector";
+import React from 'react';  // Add this line at the top of the file
 
-export default function ProjectManagerDashboard() {
+const Project Manager Dashboard = () => {
   return (
-    <div className="space-y-8">
-      <h2 className="text-xl font-bold">Project Manager Dashboard</h2>
-      <DesignConceptSelector />
-      <FileUpload />
-      {/* Add more project manager-specific features here */}
+    <div>
+      {/* Your JSX here */}
     </div>
   );
-}
+};
+
+export default Project Manager Dashboard;

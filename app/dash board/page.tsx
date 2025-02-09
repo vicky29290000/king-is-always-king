@@ -3,11 +3,11 @@
 import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
-import ClientDashboard from "../components/ClientDashboard"
-import ProjectManagerDashboard from "../components/ProjectManagerDashboard"
-import ArchitectDashboard from "../components/ArchitectDashboard"
-import EmployeeDashboard from "../components/EmployeeDashboard"
-import SuperAdminDashboard from "../components/SuperAdminDashboard"
+import ClientDashboard from "../components/Client Dashboard"
+import ProjectManagerDashboard from "../components/Project manager Dashboard"
+import ArchitectDashboard from "../components/Architect dashboard"
+import EmployeeDashboard from "../components/Employee Dashboard"
+import SuperAdminDashboard from "../components/Super admin Dashboard"
 
 export default function Dashboard() {
   const { data: session, status } = useSession()
@@ -30,15 +30,15 @@ export default function Dashboard() {
   const renderDashboard = () => {
     switch (session.user.role) {
       case "client":
-        return <ClientDashboard />
-      case "projectManager":
-        return <ProjectManagerDashboard />
+        return <Client Dashboard />
+      case "project Manager":
+        return <Project manager Dashboard />
       case "architect":
-        return <ArchitectDashboard />
+        return <Architect dashboard />
       case "employee":
-        return <EmployeeDashboard />
+        return <Employee Dashboard />
       case "superAdmin":
-        return <SuperAdminDashboard />
+        return <Super admin Dashboard />
       default:
         return <div>Unknown role</div> // You can enhance this to show a 404 page or a more detailed error message
     }

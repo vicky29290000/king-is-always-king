@@ -1,4 +1,4 @@
-import FileUpload from "./FileUpload";
+import FileUpload from "./Client Dashboard";
 
 export default function EmployeeDashboard() {
   return (
