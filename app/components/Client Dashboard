@@ -1,5 +1,5 @@
-import ClientDashboard from "./Architect Dashboard";
-import ClientDashboard from "./Architect Dashboard";
+import ClientDashboard from "./Architect dashboard";
+import ClientDashboard from "./Architect dashboard";
 
 export default function Client Dashboard() {
   return (

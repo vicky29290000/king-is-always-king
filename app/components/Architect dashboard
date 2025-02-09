@@ -1,5 +1,5 @@
-import Architectdashboard from "./Design Concept Selector";  // Ensure FileUpload exists in the same directory
-import Architectdashboard from "./Design Concept Selector";  // Ensure DesignConceptSelector exists in the same directory
+import Architect from "./Design Concept Selector";  // Ensure FileUpload exists in the same directory
+import Architect from "./Design Concept Selector";  // Ensure DesignConceptSelector exists in the same directory
 
 export default function Architect dashboard() {
   return (

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",           // Top-level `await` support
+    "strict": false,              // You can change this to `true` for stricter type checking
+    "moduleResolution": "node",   // Ensures proper module resolution
+    "esModuleInterop": true,      // Helps in importing non-ES modules
+    "jsx": "preserve"             // Next.js-specific JSX transform
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "app/components/Architect dashboard", "app/components/Client Dashboard", "app/components/Design Concept selectotr", "app/components/Employee Dashboard", "app/components/File upload", "app/components/Footer", "app/components/Header", "app/components/Project manager Dashboard", "app/components/Super admin Dashboard", "app/login/login", "app/layout", "app/pages", "lib/auth", "app/api/upload/routes"],
+  "exclude": ["node_modules"]
+}
