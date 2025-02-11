@@ -24,6 +24,7 @@
   "homepage": "https://github.com/vicky29290000/king-is-always-king#readme",
   "description": "",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.744.0",
     "@prisma/client": "^6.3.1",
     "aws-sdk": "^2.1692.0",
     "dotenv": "^16.4.7",
